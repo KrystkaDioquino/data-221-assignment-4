@@ -26,3 +26,15 @@ test_accuracy = accuracy_score(y_test, breast_cancer_constrained_tree_prediction
 # Display the accuracy
 print(f"Test Accuracy: {test_accuracy:.2f}")
 
+# Get the importance value of each feature and the feature name
+importance_value = breast_cancer_constrained_tree.feature_importances_
+feature_names = breast_cancer_data.feature_names
+
+# Get only the top 5 feature name based on their value
+top_features = sorted(zip(importance_value, feature_names), reverse=True)[:5]
+
+print("\nTop 5 Most Important Features:")
+
+# Print out the top 5 features
+for i, (importance, name) in enumerate(top_features, 1):
+    print(f"{i}. {name}")
