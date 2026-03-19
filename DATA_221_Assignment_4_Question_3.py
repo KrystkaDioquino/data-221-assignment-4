@@ -38,3 +38,13 @@ print("\nTop 5 Most Important Features:")
 # Print out the top 5 features
 for i, (importance, name) in enumerate(top_features, 1):
     print(f"{i}. {name}")
+
+"""
+Controlling complexity, like setting a max_depth, prevents a tree from growing more and memorizing 
+every detail in the training data. This forces the model to ignore random noise and focus on broad patterns, 
+which significantly improves its ability to make accurate predictions on new data.
+
+Feature importance identifies which variables are the best at cleaning up the entropy in the data. By ranking these 
+variables, it makes the decision tree interpretable. With this, one can see exactly which features the model relied 
+on most to make its final choice.
+"""
