@@ -28,3 +28,11 @@ breast_cancer_decision_tree_test_accuracy= accuracy_score(y_test, breast_cancer_
 # Display the computed accuracy for both prediction
 print("Training accuracy: ", breast_cancer_decision_tree_train_accuracy)
 print("Testing accuracy: ", breast_cancer_decision_tree_test_accuracy)
+
+"""
+Entropy is a mathematical measure of impurity or uncertainty within a data partition, where a value near zero indicates a pure 
+group belonging to a single class. In decision tree construction, the goal is to systematically reduce this entropy by splitting 
+the data into increasingly organized and predictable subsets.
+
+The training accuracy of 1.0 compared to a testing accuracy of 0.91 confirms that the model is overfitted.
+"""
