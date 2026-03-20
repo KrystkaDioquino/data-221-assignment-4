@@ -26,8 +26,7 @@ fashion_mnist_ccn_model = models.Sequential([
     layers.Flatten(),
 
     # Dense output layer with 10 nodes. One for each fashion category
-    layers.Dense(10, activation='softmax')
-])
+    layers.Dense(10, activation='softmax')])
 
 # Compile the model
 fashion_mnist_ccn_model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
@@ -46,3 +45,4 @@ In CNN, it uses filters that slide across the entire image while only connecting
 In Fashion MNIST, convolution layers learn basic edges and lines, while later layers combine these into complex textures and shapes of clothes. 
 Filters automatically discover these clothing patterns without manual feature design.
 """
+
